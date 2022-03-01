@@ -44,7 +44,13 @@ nav ul {
   background-color: #04aa6d;
 }
 .show {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-close {
+  display: none;
 }
 
 @media (min-width: 40em) {
@@ -824,4 +830,25 @@ h2 {
   border-radius: 25px;
   font-weight: 500;
   margin-top: 20px;
+}
+
+@media (max-width: 639.8px) {
+  .content-close {
+    display: block;
+    width: 90%;
+    text-align: right;
+    margin-top: 15px;
+    font-size: 22px;
+  }
+
+  .content-close-btn {
+    border: none;
+    padding: 10px;
+    background-color: #e7e9eb;
+    cursor: pointer;
+  }
+
+  .content-close-btn:hover {
+    background-color: #04aa6d;
+  }
 }
